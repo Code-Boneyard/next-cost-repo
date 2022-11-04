@@ -5,7 +5,6 @@ export default function Login() {
     <div>
       <main>
         <h1 className="text-3xl font-bold underline">This is the Login page.</h1>
-        <Link href="/">Back to Home</Link>
       </main>
     </div>
   );
