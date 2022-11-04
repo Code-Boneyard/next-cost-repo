@@ -4,7 +4,7 @@ import styles from '../styles/Main.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <title>MEP Systems Cost Repository</title>
         <meta name="description" content="MEP Systems Cost Repository" />
