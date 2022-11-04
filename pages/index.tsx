@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h4>This is the main page.</h4>
+        <h1 className="text-3xl font-bold underline">This is the main page.</h1>
       </main>
     </div>
   );
