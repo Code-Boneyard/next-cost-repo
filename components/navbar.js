@@ -52,14 +52,14 @@ export const Navbar = () => {
             </Link>{' '}
           </div>
           <div className="ml-4 flex items-center md:ml-6">
-          <Avatar name={userName} size="40" round={true} />
+          
             
             <Menu as="div" className="relative ml-3">
               <div>
-                <Menu.Button className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <Menu.Button className="rounded-full  focus:outline-none focus:ring-2 ">
                   <span className="sr-only">Open user menu</span>
 
-                  <UserCircleIcon className="h-6 w-6" aria-hidden="true" />
+                  <Avatar name={userName} size="40" round={true} />
                 </Menu.Button>
               </div>
               <Transition
