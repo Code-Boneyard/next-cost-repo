@@ -19,7 +19,7 @@ export const Navbar = () => {
             <span className="text-xl  tracking-wide">LAYTON MEP</span>
           </a>
         </Link>
-        <button className=" inline-flex p-3 hover:bg-green-600 rounded lg:hidden  ml-auto hover:text-white outline-none" onClick={handleClick}>
+        <button className=" inline-flex p-3 hover:bg-gray-100 rounded lg:hidden  ml-auto hover:text-white outline-none" onClick={handleClick}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -27,16 +27,16 @@ export const Navbar = () => {
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div className={`${active ? '' : 'hidden'}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-green-600 hover:text-white" href="/projects">
+            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-100 hover:text-gray-700" href="/projects">
               Projects
             </Link>
-            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-green-600 hover:text-white" href="/analytics">
+            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-100 hover:text-gray-700" href="/analytics">
               Analytics
             </Link>{' '}
-            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-green-600 hover:text-white" href="/sessions/profile">
+            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-100 hover:text-gray-700" href="/sessions/profile">
               Profile
             </Link>
-            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-green-600 hover:text-white" href="/settings">
+            <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-100 hover:text-gray-700" href="/settings">
               Settings
             </Link>
           </div>
