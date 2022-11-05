@@ -1,9 +1,4 @@
-import type { ReactElement } from 'react';
-import Layout from '../components/Layout';
-import NestedLayout from '../components/nested-layout';
-import type { NextPageWithLayout } from './_app';
-
-const Home: NextPageWithLayout = () => {
+export default function Home() {
   return (
     <div>
       <header className="bg-white shadow">
@@ -18,19 +13,8 @@ const Home: NextPageWithLayout = () => {
             <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">Recent Models</div>
             <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">Recent Reports</div>
           </div>
-          {/* /End replace */}
         </div>
       </main>
     </div>
   );
-};
-
-Home.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <Layout>
-      <NestedLayout>{page}</NestedLayout>
-    </Layout>
-  );
-};
-
-export default Home;
+}

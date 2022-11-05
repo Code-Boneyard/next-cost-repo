@@ -1,9 +1,4 @@
-import type { ReactElement } from 'react';
-import Layout from '../components/Layout';
-import NestedLayout from '../components/nested-layout';
-import type { NextPageWithLayout } from './_app';
-
-const Settings: NextPageWithLayout = () => {
+export default function Settings() {
   return (
     <div>
       <header className="bg-white shadow">
@@ -16,19 +11,8 @@ const Settings: NextPageWithLayout = () => {
           <div className="px-4 py-6 sm:px-0">
             <div className="h-96 rounded-lg border-4 border-dashed border-gray-200" />
           </div>
-          {/* /End replace */}
         </div>
       </main>
     </div>
   );
-};
-
-Settings.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <Layout>
-      <NestedLayout>{page}</NestedLayout>
-    </Layout>
-  );
-};
-
-export default Settings;
+}
