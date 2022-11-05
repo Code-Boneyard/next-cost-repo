@@ -17,7 +17,6 @@ const Home: NextPageWithLayout = () => {
             <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">Recent Projects</div>
             <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">Recent Models</div>
             <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">Recent Reports</div>
-
           </div>
           {/* /End replace */}
         </div>
