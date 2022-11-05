@@ -28,7 +28,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap bg-gray-900 text-white p-3 uppercase ">
+      <nav className="flex items-center flex-wrap bg-gray-900 text-white p-3 uppercase">
         <Link legacyBehavior href="/home">
           <a className="inline-flex items-center p-2  ">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-current text-white h-8 w-8 mr-2">
@@ -53,38 +53,38 @@ export const Navbar = () => {
             </Link>
             <Link className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-100 hover:text-gray-700" href="/analytics">
               Analytics
-            </Link>{' '}
+            </Link>
           </div>
-          <div className=" flex items-center md:ml-1">
-            <Menu as="div" className="relative ml-1">
-              <div>
-                <Menu.Button className="rounded-full  focus:outline-none focus:ring-2 ">
-                  <span className="sr-only">Open user menu</span>
-                  <Avatar name={userName} size="40" round={true} />
-                </Menu.Button>
-              </div>
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-300"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95">
-                <Menu.Items className="absolute  z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  {userNavigation.map((item) => (
-                    <Menu.Item key={item.name}>
-                      {({ active }) => (
-                        <a href={item.href} className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>
-                          {item.name}
-                        </a>
-                      )}
-                    </Menu.Item>
-                  ))}
-                </Menu.Items>
-              </Transition>
-            </Menu>
-          </div>
+        </div>
+        <div className=" flex items-center md:ml-1">
+          <Menu as="div" className="relative ml-1">
+            <div>
+              <Menu.Button className="rounded-full  focus:outline-none focus:ring-2 ">
+                <span className="sr-only">Open user menu</span>
+                <Avatar name={userName} size="40" round={true} />
+              </Menu.Button>
+            </div>
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-300"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95">
+              <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                {userNavigation.map((item) => (
+                  <Menu.Item key={item.name}>
+                    {({ active }) => (
+                      <a href={item.href} className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}>
+                        {item.name}
+                      </a>
+                    )}
+                  </Menu.Item>
+                ))}
+              </Menu.Items>
+            </Transition>
+          </Menu>
         </div>
       </nav>
     </>
