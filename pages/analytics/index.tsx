@@ -1,14 +1,14 @@
 import type { ReactElement } from 'react';
-import Layout from './../components/layout';
-import NestedLayout from './../components/nested-layout';
-import type { NextPageWithLayout } from './_app';
+import Layout from './../../components/layout';
+import NestedLayout from './../../components/nested-layout';
+import type { NextPageWithLayout } from './../_app';
 
-const Home: NextPageWithLayout = () => {
+const Analytics: NextPageWithLayout = () => {
   return (
     <div>
       <header className="bg-white shadow">
         <div className="mx-auto  py-6 px-4 sm:px-6 lg:px-8">
-          <h3 className="text-3xl font-bold tracking-tight text-gray-900 uppercase">Dashboard</h3>
+          <h3 className="text-3xl font-bold tracking-tight text-gray-900 uppercase">Analytics</h3>
         </div>
       </header>
       <main>
@@ -23,7 +23,7 @@ const Home: NextPageWithLayout = () => {
   );
 };
 
-Home.getLayout = function getLayout(page: ReactElement) {
+Analytics.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <NestedLayout>{page}</NestedLayout>
@@ -31,4 +31,4 @@ Home.getLayout = function getLayout(page: ReactElement) {
   );
 };
 
-export default Home;
+export default Analytics;

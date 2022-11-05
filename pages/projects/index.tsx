@@ -11,7 +11,31 @@ const Projects: NextPageWithLayout = () => {
           <h3 className="text-3xl font-bold tracking-tight text-gray-900 uppercase">Projects</h3>
         </div>
       </header>
-      <p>Come here to see projects</p>
+      <main>
+        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <table className="table-auto w-full">
+            <thead className="border-b">
+              <tr className="bg-gray-100">
+                <th className="text-left p-4 font-medium">Project</th>
+                <th className="text-left p-4 font-medium">Type</th>
+                <th className="text-left p-4 font-medium">Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b hover:bg-gray-50">
+                <td className="p-4">Databank SLC6</td>
+                <td className="p-4">basic@example.com</td>
+                <td className="p-4">Administrator</td>
+              </tr>
+              <tr className="border-b hover:bg-gray-50">
+                <td className="p-4">Vantage AZ11</td>
+                <td className="p-4">admin@example.com</td>
+                <td className="p-4">Super Administrator</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
   );
 };
