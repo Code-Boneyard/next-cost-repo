@@ -4,6 +4,9 @@ import { useState } from 'react';
 import { Bars3Icon, BellIcon, UserCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import Image from 'next/image';
+import Avatar from 'react-avatar';
+
+const userName = "Max Geller";
 
 const userNavigation = [
   { name: 'Your Profile', href: '/sessions/profile' },
@@ -49,7 +52,8 @@ export const Navbar = () => {
             </Link>{' '}
           </div>
           <div className="ml-4 flex items-center md:ml-6">
-            {/* Profile dropdown */}
+          <Avatar name={userName} size="40" round={true} />
+            
             <Menu as="div" className="relative ml-3">
               <div>
                 <Menu.Button className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
