@@ -1,5 +1,6 @@
 import type { ReactElement } from 'react';
 import Layout from '../../components/Layout';
+import NestedLayout from '../../components/nested-layout';
 import type { NextPageWithLayout } from '../_app';
 
 const Admin: NextPageWithLayout = () => {
@@ -12,7 +13,11 @@ const Admin: NextPageWithLayout = () => {
 };
 
 Admin.getLayout = function getLayout(page: ReactElement) {
-  return <Layout>{page}</Layout>;
+  return (
+    <Layout>
+      <NestedLayout>{page}</NestedLayout>
+    </Layout>
+  );
 };
 
 export default Admin;
