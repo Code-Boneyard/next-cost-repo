@@ -1,9 +1,3 @@
-import type { ReactElement } from 'react';
-import Layout from '../../components/Layout';
-import NestedLayout from '../../components/nested-layout';
-import type { NextPageWithLayout } from '../_app';
-import { useLayoutEffect, useRef, useState } from 'react';
-
 const transactions = [
   {
     id: '221854',
@@ -35,7 +29,7 @@ const transactions = [
   // More transactions...
 ];
 
-const Projects: NextPageWithLayout = () => {
+export default function Analytics() {
   return (
     <div>
       <header className="bg-white shadow">
@@ -105,14 +99,4 @@ const Projects: NextPageWithLayout = () => {
       </main>
     </div>
   );
-};
-
-Projects.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <Layout>
-      <NestedLayout>{page}</NestedLayout>
-    </Layout>
-  );
-};
-
-export default Projects;
+}
