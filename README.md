@@ -48,6 +48,11 @@ $ prisma db push
 
 ## HOSTING
 
+To deploy to production:
+```bash
+vercel --prod
+```
+
 Hosted On Vercel: https://next-cost-repo.vercel.app/
 
 ## ROADMAP
@@ -57,7 +62,6 @@ fix layout
 - [ ] Basic Project CRUD
 - [ ] Add Page Titles
 - [ ] Add Page Descriptions
-- [ ] Add User Avatars
 - [ ] Basic Routing
 - [ ] Confirm Icons
 - [ ] Confirm Colors
@@ -73,7 +77,6 @@ fix layout
 - [ ] Configure Roles / Routes
 - [ ] Basic User Profile
 - [ ] "Confirm Delete" Service
-- [ ] Avatar React
 - [ ] Google Maps
 - [ ] Nivo Charts
 - [ ] Font Awesome Icons
