@@ -7,19 +7,20 @@ import Layout from '../components/layout';
 import NestedLayout from '../components/nested-layout';
 import type { NextPageWithLayout } from './_app';
 
-
 const Page: NextPageWithLayout = () => {
-  return <p>hello world</p>
-}
+  return (
+    <div>
+      <p>This is the index page</p>
+    </div>
+  );
+};
 
 Page.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <NestedLayout>{page}</NestedLayout>
     </Layout>
-  )
-}
+  );
+};
 
-
-export default Page
-
+export default Page;
