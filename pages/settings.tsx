@@ -6,8 +6,12 @@ import type { NextPageWithLayout } from './_app';
 const Settings: NextPageWithLayout = () => {
   return (
     <div>
-      <h3>Settings</h3>
-      <p>Come here to login to your account</p>
+      <header className="bg-white shadow">
+        <div className="mx-auto  py-6 px-4 sm:px-6 lg:px-8">
+          <h3 className="text-3xl font-bold tracking-tight text-gray-900 uppercase">Settings</h3>
+        </div>
+      </header>
+      <p>Come here to change settings</p>
     </div>
   );
 };
