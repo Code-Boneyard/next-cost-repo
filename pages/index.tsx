@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Main.module.css';
 import { Navbar } from '../components/Navbar';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       <main>
         <Navbar />
         <h1 className="text-3xl font-bold underline">This is the main page.</h1>
+        <Link href={"/home"}>Home</Link>
+        <Link href={"/sessions/profile"}>Profile</Link>
+        <Link href={"/settings"}>Settings</Link>
       </main>
     </div>
   );

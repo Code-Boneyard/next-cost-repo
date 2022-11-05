@@ -5,7 +5,7 @@ export default function Verify() {
     <div>
       <main>
         <h1 className="text-3xl font-bold underline">This is the Verification page.</h1>
-        <Link href="/">Back to Home</Link>
+        <Link href="/home">Back to Home</Link>
       </main>
     </div>
   );
