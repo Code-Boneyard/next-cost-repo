@@ -4,7 +4,7 @@ import styles from '../styles/Main.module.css';
 import Link from 'next/link';
 import type { ReactElement } from 'react';
 import Layout from '../components/Layout';
-import NestedLayout from '../components/Nested-layout';
+import NestedLayout from '../components/nested-layout';
 import type { NextPageWithLayout } from './_app';
 
 const Page: NextPageWithLayout = () => {

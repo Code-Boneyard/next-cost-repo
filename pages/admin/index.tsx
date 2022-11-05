@@ -1,18 +1,18 @@
 import type { ReactElement } from 'react';
 import Layout from '../../components/Layout';
-import NestedLayout from './../../components/nested-layout';
-import type { NextPageWithLayout } from './../_app';
+import NestedLayout from '../../components/nested-layout';
+import type { NextPageWithLayout } from '../_app';
 
-const Login: NextPageWithLayout = () => {
+const Admin: NextPageWithLayout = () => {
   return (
     <div>
-      <h3>Login</h3>
+      <h3>Admin</h3>
       <p>Come here to login to your account</p>
     </div>
   );
 };
 
-Login.getLayout = function getLayout(page: ReactElement) {
+Admin.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <NestedLayout>{page}</NestedLayout>
@@ -20,4 +20,4 @@ Login.getLayout = function getLayout(page: ReactElement) {
   );
 };
 
-export default Login;
+export default Admin;
