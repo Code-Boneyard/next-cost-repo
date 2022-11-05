@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
-import Layout from './../../components/layout';
-import NestedLayout from './../../components/nested-layout';
+import Layout from '../../components/Layout';
+import NestedLayout from '../../components/Nested-layout';
 import type { NextPageWithLayout } from './../_app';
 
 const Profile: NextPageWithLayout = () => {

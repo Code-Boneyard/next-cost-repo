@@ -53,7 +53,7 @@ Hosted On Vercel: https://next-cost-repo.vercel.app/
 ## ROADMAP
 
 ### Priority
-
+fix layout
 - [ ] Basic Project CRUD
 - [ ] Add Page Titles
 - [ ] Add Page Descriptions
