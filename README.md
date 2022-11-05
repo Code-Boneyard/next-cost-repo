@@ -6,7 +6,6 @@ NextJS & TailwindCSS
 Prisma & MySQL on Azure
 Vercel Deployment
 
-
 ## DEVELOPMENT
 
 Run the development server:
@@ -74,6 +73,10 @@ Hosted On Vercel: https://next-cost-repo.vercel.app/
 - [ ] Configure Roles / Routes
 - [ ] Basic User Profile
 - [ ] "Confirm Delete" Service
+- [ ] Avatar React
+- [ ] Google Maps
+- [ ] Nivo Charts
+- [ ] Font Awesome Icons
 
 ### Multitenancy
 
@@ -108,6 +111,16 @@ Hosted On Vercel: https://next-cost-repo.vercel.app/
 - [ ] Add a sort bar
 - [ ] Add a pagination bar
 - [ ] Add a user dashboard
+- [ ] Sort Project Listing by Date Modified
+- [ ] Configure DocuSign (eSign) API for NDA Execution/Management
+- [ ] Project Detail Page / Layout
+- [ ] Project Edit Page
+- [ ] New Project
+- [ ] Project Types / db Relationship
+- [ ] Project Conditions / db Relationship
+- [ ] Union Conditions / db Relationship
+- [ ] LEED Conditions / db Relationship
+- [ ] Company / db Organization Relationship
 
 ### Cost Indices
 
@@ -153,4 +166,5 @@ Hosted On Vercel: https://next-cost-repo.vercel.app/
 - [ ] RFQ Builder
 - [ ] Bid Form Builder
 - [ ] Scope of Work Builder
+
 ### Conceptual Modeling
