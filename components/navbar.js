@@ -10,7 +10,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap bg-gray-900 p-3 ">
+      <nav className="flex items-center flex-wrap bg-gray-900 p-3 uppercase ">
         <Link legacyBehavior href="/home">
           <a className="inline-flex items-center p-2 mr-4 ">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-current text-white h-8 w-8 mr-2">

@@ -13,6 +13,8 @@ const Projects: NextPageWithLayout = () => {
       </header>
       <main>
         <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <div className="h-20 rounded-lg border-4 border-dashed border-gray-200">Filter</div>
+
           <table className="table-auto w-full">
             <thead className="border-b">
               <tr className="bg-gray-100">
@@ -34,6 +36,7 @@ const Projects: NextPageWithLayout = () => {
               </tr>
             </tbody>
           </table>
+          <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">Map</div>
         </div>
       </main>
     </div>
