@@ -1,12 +1,23 @@
-import Link from 'next/link';
+import type { ReactElement } from 'react';
+import Layout from './../../components/layout';
+import NestedLayout from './../../components/nested-layout';
+import type { NextPageWithLayout } from './../_app';
 
-export default function Signup() {
+const Signup: NextPageWithLayout = () => {
   return (
     <div>
-      <main>
-        <h1 className="text-3xl font-bold underline">This is the Signup page.</h1>
-        <Link href="/home">Back to Home</Link>
-      </main>
+      <h3>Signup</h3>
+      <p>Come here to signup</p>
     </div>
   );
-}
+};
+
+Signup.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      <NestedLayout>{page}</NestedLayout>
+    </Layout>
+  );
+};
+
+export default Signup;

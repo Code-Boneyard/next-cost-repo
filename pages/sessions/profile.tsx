@@ -1,12 +1,23 @@
-import Link from 'next/link';
+import type { ReactElement } from 'react';
+import Layout from './../../components/layout';
+import NestedLayout from './../../components/nested-layout';
+import type { NextPageWithLayout } from './../_app';
 
-export default function Profile() {
+const Profile: NextPageWithLayout = () => {
   return (
     <div>
-      <main>
-        <h1 className="text-3xl font-bold underline">This is the Profile page.</h1>
-        <Link href="/home">Back to Home</Link>
-      </main>
+      <h3>Profile</h3>
+      <p>Come here to update your profile</p>
     </div>
   );
-}
+};
+
+Profile.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      <NestedLayout>{page}</NestedLayout>
+    </Layout>
+  );
+};
+
+export default Profile;
