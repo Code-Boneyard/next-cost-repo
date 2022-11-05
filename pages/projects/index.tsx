@@ -6,19 +6,28 @@ import { useLayoutEffect, useRef, useState } from 'react';
 
 const transactions = [
   {
-    id: 'AAPS0L',
-    company: 'Chase & Co.',
-    share: 'CAC',
-    commission: '+$4.37',
+    id: '221854',
+    project: 'Vantage AZ11',
+    type: 'Data Center',
+    location: 'Goodyear, AZ',
     price: '$3,509.00',
     quantity: '12.00',
     netAmount: '$4,397.00',
   },
   {
-    id: 'AAPS0dL',
-    company: 'Chase & Co.',
-    share: 'CAC',
-    commission: '+$4.37',
+    id: '221775',
+    project: 'Databank SLC6',
+    type: 'Data Center',
+    location: 'Salt Lake City, UT',
+    price: '$3,509.00',
+    quantity: '12.00',
+    netAmount: '$4,397.00',
+  },
+  {
+    id: '221856',
+    project: 'Aligned SLC03',
+    type: 'Data Center',
+    location: 'West Jordan, UT',
     price: '$3,509.00',
     quantity: '12.00',
     netAmount: '$4,397.00',
@@ -44,19 +53,19 @@ const Projects: NextPageWithLayout = () => {
                     <thead className="bg-gray-50">
                       <tr>
                         <th scope="col" className="whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
-                          Transaction ID
+                          #
                         </th>
                         <th scope="col" className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900">
-                          Company
+                          Project
                         </th>
                         <th scope="col" className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900">
-                          Share
+                          Type
                         </th>
                         <th scope="col" className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900">
-                          Commision
+                          Location
                         </th>
                         <th scope="col" className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900">
-                          Price
+                          Total ($)
                         </th>
                         <th scope="col" className="whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900">
                           Quantity
@@ -73,9 +82,9 @@ const Projects: NextPageWithLayout = () => {
                       {transactions.map((transaction) => (
                         <tr key={transaction.id}>
                           <td className="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-6">{transaction.id}</td>
-                          <td className="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900">{transaction.company}</td>
-                          <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-900">{transaction.share}</td>
-                          <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.commission}</td>
+                          <td className="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-900">{transaction.project}</td>
+                          <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-900">{transaction.type}</td>
+                          <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.location}</td>
                           <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.price}</td>
                           <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.quantity}</td>
                           <td className="whitespace-nowrap px-2 py-2 text-sm text-gray-500">{transaction.netAmount}</td>
