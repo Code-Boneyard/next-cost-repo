@@ -1,5 +1,5 @@
 import Header from './../../components/Header';
-
+import Link from 'next/link';
 
 const transactions = [
   {
@@ -35,8 +35,9 @@ const transactions = [
 export default function Analytics() {
   return (
     <div>
-<Header title="projects" />
+      <Header title="projects" />
       <main>
+        <Link href="/projects/project">Example Project</Link>
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="mt-8 flex flex-col">
             <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
