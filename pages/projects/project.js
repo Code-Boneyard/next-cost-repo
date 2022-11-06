@@ -3,7 +3,7 @@ import { HomeIcon } from '@heroicons/react/20/solid';
 
 const pages = [
   { name: 'Projects', href: '#', current: false },
-  { name: 'Project Nero', href: '#', current: true },
+  { name: 'Vantage AZ11', href: '#', current: true },
 ];
 
 export default function Project() {
