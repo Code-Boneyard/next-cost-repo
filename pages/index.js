@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Page() {
   return (
     <div>
-      <p>This is the index page. You shouldn't ever see this.</p>
+      <p>This is the index page. You shouldnt ever see this.</p>
       <br></br>
       <p>
         Next.js has three patterns of authenticating apps: client-side, server-side, and API route authentication. It is important to choose the patterns that best fit your use
