@@ -3,9 +3,13 @@
 ## TECH STACK
 
 NextJS & TailwindCSS
+Next-Auth
 Prisma & MySQL on Azure
 Vercel Deployment
 
+## AUTH
+Be sure to update client_id and client_secret (in .env.local), and ensure  updated domain/callback URL
+https://github.com/settings/applications/2049255
 ## DEVELOPMENT
 
 Run the development server:
