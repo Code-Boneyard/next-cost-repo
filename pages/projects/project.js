@@ -1,5 +1,11 @@
 import Header from './../../components/Header';
 import { HomeIcon } from '@heroicons/react/20/solid';
+import chartStyles from '../../styles/Chart.module.css';
+import {data} from '../../components/charts/pie';
+
+import dynamic from 'next/dynamic';
+
+const MyResponsivePie = dynamic(() => import('../../components/charts/pie'), { ssr: false });
 
 const pages = [
   { name: 'Projects', href: '#', current: false },
@@ -43,7 +49,12 @@ export default function Project() {
       <main>
         <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
           <div className="px-4 py-6 sm:px-0">
-            <div className="h-96 rounded-lg border-4 border-dashed border-gray-200" />
+            <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">
+              
+              <div className={chartStyles.divchart}>
+                <MyResponsivePie data={data} />
+              </div>
+            </div>
           </div>
         </div>
       </main>
