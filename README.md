@@ -62,6 +62,13 @@ Hosted On Vercel: https://next-cost-repo.vercel.app/
 ## ROADMAP
 
 ### Priority
+Configure Email Auth
+Configure Google Auth
+Setup Database (Supabase + Postgres)
+Setup Prisma ORM
+Confirm User Callback URLs / Confirm Project Domain
+
+
 fix layout
 - [ ] Basic Project CRUD
 - [ ] Add Page Titles
