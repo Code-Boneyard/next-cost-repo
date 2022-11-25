@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic';
 const MyResponsivePie = dynamic(() => import('../../components/charts/pie'), { ssr: false });
 
 const pages = [
-  { name: 'Projects', href: '#', current: false },
+  { name: 'Projects', href: '/projects', current: false },
   { name: 'Vantage AZ11', href: '#', current: true },
 ];
 
@@ -18,14 +18,7 @@ export default function Project() {
       <Header title="vantage az11" />
       <nav className="flex border-b border-gray-200 bg-white" aria-label="Breadcrumb">
         <ol role="list" className="mx-auto flex w-full max-w-screen-xl space-x-1 px-1 sm:px-6 lg:px-1">
-          <li className="flex">
-            <div className="flex items-center">
-              <a href="#" className="text-gray-400 hover:text-gray-500">
-                <HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
-                <span className="sr-only">Home</span>
-              </a>
-            </div>
-          </li>
+ 
           {pages.map((page) => (
             <li key={page.name} className="flex">
               <div className="flex items-center">
@@ -49,6 +42,9 @@ export default function Project() {
       <main>
         <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
           <div className="px-4 py-6 sm:px-0">
+          <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">
+          <p>Project Information</p>
+          </div>
             <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">
               
               <div className={chartStyles.divchart}>
