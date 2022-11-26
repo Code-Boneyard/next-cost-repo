@@ -62,18 +62,17 @@ Hosted On Vercel: https://next-cost-repo.vercel.app/
 ## ROADMAP
 
 ### Priority
-Configure Email Auth
-Configure Google Auth
-Setup Database (Supabase + Postgres)
-Setup Prisma ORM (npx prisma init --datasource-provider sqlite)
-Confirm User Callback URLs / Confirm Project Domain
-
-
-fix layout
+- [ ] Finish Profile Page Layout
+- [ ] Profile Details Page Layout
+- [ ] Setup Database (Supabase + Postgres)
+- [ ] Setup Prisma ORM (npx prisma init --datasource-provider sqlite)
+- [ ] Dynamic Profile Detail Page
+- [ ] Profile Page / User Data Storage
+- [ ] Add Project Page
+- [ ] Configure Email Auth
+- [ ] Customize Tailwind CSS Styling
+- [ ] Confirm User Callback URLs / Confirm Project Domain
 - [ ] Basic Project CRUD
-- [ ] Add Page Titles
-- [ ] Add Page Descriptions
-- [ ] Basic Routing
 - [ ] Confirm Icons
 - [ ] Confirm Colors
 - [ ] Confirm Fonts
@@ -83,15 +82,18 @@ fix layout
 - [ ] 404 Workflow
 - [ ] Login Page
 - [ ] Verify Password
-- [ ] User Authentication
-- [ ] Tailwind CSS Styling
 - [ ] Configure Roles / Routes
-- [ ] Basic User Profile
 - [ ] "Confirm Delete" Service
 - [ ] Google Maps
-- [ ] Nivo Charts
+- [ ] Configure Nivo Charts
 - [ ] Font Awesome Icons
-
+- [X] Install Prisma ORM
+- [X] Install Nivo Charts
+- [X] Basic Github Login w/Next-Auth
+- [X] Add Page Titles
+- [X] Basic Avatars
+- [X] Basic Navbar
+- [X] Basic Routing
 ### Multitenancy
 
 - [ ] Multi Tenant Support
@@ -107,7 +109,6 @@ fix layout
 
 ### Secondary
 
-- [ ] Add Page Meta Tags
 - [ ] Add admin dashboard
 - [ ] Add admin settings
 - [ ] Decide on Charts Library
