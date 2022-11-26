@@ -65,7 +65,7 @@ Hosted On Vercel: https://next-cost-repo.vercel.app/
 Configure Email Auth
 Configure Google Auth
 Setup Database (Supabase + Postgres)
-Setup Prisma ORM
+Setup Prisma ORM (npx prisma init --datasource-provider sqlite)
 Confirm User Callback URLs / Confirm Project Domain
 
 
